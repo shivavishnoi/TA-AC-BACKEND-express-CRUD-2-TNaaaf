@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reedium</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Reedium</h1>
+    <hr />
+    <h3>New Article</h3>
+    <a href="/articles"><button>SHow Articles</button></a>
+    <br /><br /><br />
+    <form action="/articles" method="POST">
+      <input type="text" name="title" placeholder="title" /><br /><br />
+      <textarea
+        name="description"
+        placeholder="description"
+        cols="30"
+        rows="10"
+      ></textarea
+      ><br /><br />
+      <input type="text" name="author" placeholder="author" /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
