@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= author.name %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <header>
+    <h1> Welcome to Bookstore</h1>
+    <hr>
+  </header>
+  <br><br>
+  <h2><strong> Author's Details...</strong></h2>
+  <h4><%= author.name %></h4>
+  <h5><%= author.email %></h5>
+  <p>-----------------------------------------------------------------------------------------------</p>
+  <h2><strong> Books Details...</strong></h2>
+  <% author.books.forEach((book)=>{ %>
+  <h4><%= book.title %></h4>
+  <p><%= book.summary %></p>
+  <p> pages: <%= book.pages %></p>
+  <p> publication: <%= book.publication %></p>
+  <p> category: <%= book.category %></p>
+  <img src="<%= book.cover %>" alt="url not working">
+  <br>
+  <p>----------------------------------------</p>
+  <%  }) %>
+  <a href="/authors/<%= author.id %>/delete">
+    <button>Delete this author and his books</button> </a>
+  <br><br>
+  <a href="/">
+    <button>Back to Homepage</button>
+  </a>
+</body>
+
+</html>

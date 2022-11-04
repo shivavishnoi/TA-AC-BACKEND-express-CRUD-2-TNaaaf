@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Authors</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Bookstore</h1>
+    <hr>
+  </header>
+  <br><br>
+  <h3>Check All Books...</h3>
+  <div>
+    <h3>Tags:
+      <a href="/books/tag/adventure" class="tag">Adventure</a>
+      <a href="/books/tag/fiction" class="tag">Fiction</a>
+      <a href="/books/tag/technology" class="tag">Technology</a>
+      <a href="/books/tag/motivation" class="tag">Motivation</a>
+    </h3>
+  </div>
+  <% books.forEach((book)=>{ %>
+  <a href="/books/<%= book.id %>/show">
+    <h4>&nbsp; <%= book.title %></h4>
+  </a>
+
+  <% }) %>
+  <a href="/">
+
+    <button>Back to Homepage</button>
+  </a>
+</body>
+
+</html>
