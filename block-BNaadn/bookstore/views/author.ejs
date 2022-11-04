@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome To Bookstore</h1>
+    <hr>
+  </header>
+  <main>
+    <h3>Enter Author Details...</h3>
+    <form action="/authors/new" method="POST">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" placeholder="Name" id="name">
+      </div>
+      <div>
+        <label for="email">EmailId: </label>
+        <input type="email" name="email" placeholder="EmailId" id="email">
+      </div>
+      <div>
+        <label for="Country">Country: </label>
+        <input type="text" name="country" placeholder="Country" id="name">
+      </div>
+      <button type="submit">Next &nbsp;&nbsp;👉</button>
+    </form>
+    <a href="/">
+      <br>
+      <button>Back to Homepage</button>
+    </a>
+  </main>
+</body>
+
+</html>
